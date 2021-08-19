@@ -1,5 +1,5 @@
 # Flask JWT Persistency
-This extension was developed to add additional features to JWT like revoke a single token or all tokens issued to a specific user. These features are implemented by persisting the tokens in a database, so JWT looses their stateless property.
+This extension was developed to add additional features to JWT like revoke a single token or all tokens issued to a specific user. These features are implemented by persisting the tokens in a database, so JWT looses its stateless property.
 
 Installing
 ----------

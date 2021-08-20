@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="flask-jwt-persistency",
-    version="0.0.1",
+    version="0.0.2",
     author="Rafael A. Bizao",
     author_email="rabizao@gmail.com",
     description="Changes standard flask and jwt errors format",

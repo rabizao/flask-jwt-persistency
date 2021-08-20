@@ -1,4 +1,4 @@
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 EXTENSION_NAME = "flask-jwt-persistency"
 
 
@@ -32,8 +32,8 @@ class JWTPersistency(object):
 
         :param Flask app: The Flask application object.
         """
-        app.config["SQLALCHEMY_BINDS"] = dict.get(
-            app.config, "SQLALCHEMY_BINDS", {})
+        if not app.config["SQLALCHEMY_BINDS"]:
+            app.config["SQLALCHEMY_BINDS"] = {}
         app.config["SQLALCHEMY_BINDS"]["jwtptokens"] = dict.get(
             app.config, "JWTP_DATABASE_URL", "sqlite:///jwtptokens.db")
         app.extensions = getattr(app, "extensions", {})
